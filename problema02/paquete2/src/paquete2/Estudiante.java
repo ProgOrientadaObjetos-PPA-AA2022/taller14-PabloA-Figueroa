@@ -4,6 +4,8 @@
  */
 package paquete2;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SALA I
@@ -14,6 +16,7 @@ public class Estudiante {
     private double calificacion1;
     private double calificacion2;
     private double calificacion3;
+    private double promedio;
 
     public String obtenerNombre() {
         return nombre;
@@ -54,15 +57,28 @@ public class Estudiante {
     public void establecerCalificacion3(double calificacion3) {
         this.calificacion3 = calificacion3;
     }
+    public double obtenerPromedio() {
+        return promedio;
+    }
+
+    public void establecerPromedio() {
+        promedio = (calificacion1 + calificacion2 + calificacion3) / 3;
+    }
+    
     
      @Override
     public String toString(){
-        String data = String.format("Nombre: %s\n"
-                + "Apellido: %s\n"
+        String data = String.format("RESULTADO\n%s%s\n"
                 + "calificacion1: %.2f\n"
                 + "calificacion2: %.2f\n"
-                + "calificacion3: %.2f\n", 
-                nombre,apellido,calificacion1,calificacion2,calificacion3);
+                + "calificacion3: %.2f\n"
+                + "promedio: %.2f\n", 
+                nombre,
+                apellido,
+                calificacion1,
+                calificacion2,
+                calificacion3,
+                promedio);
         return data;
     }
 

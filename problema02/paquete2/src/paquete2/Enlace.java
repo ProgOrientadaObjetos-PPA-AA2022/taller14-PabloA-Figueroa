@@ -54,6 +54,7 @@ public class Enlace {
                 estu.establecerCalificacion2(rs.getDouble("calificacion2"));
                 estu.establecerCalificacion3(rs.getDouble("calificacion3"));
                 lista.add(estu);
+                estu.establecerPromedio();
             }
             
             obtenerConexion().close();

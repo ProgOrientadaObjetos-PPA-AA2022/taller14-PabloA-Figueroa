@@ -16,10 +16,10 @@ public class Ejecutor {
     public static void main(String[] args) {
         // TODO code application logic here
         Enlace c = new Enlace();
-        
         for (int i = 0; i < c.obtenerDataEstudiante().size(); i++) {
             System.out.printf("%s", c.obtenerDataEstudiante().get(i));
-        }
+        } 
+        
     }
     
 }
