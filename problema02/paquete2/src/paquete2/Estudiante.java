@@ -59,7 +59,7 @@ public class Estudiante {
     public String toString(){
         String data = String.format("Nombre: %s\n"
                 + "Apellido: %s\n"
-                + "calificacion1: %.2f\n "
+                + "calificacion1: %.2f\n"
                 + "calificacion2: %.2f\n"
                 + "calificacion3: %.2f\n", 
                 nombre,apellido,calificacion1,calificacion2,calificacion3);

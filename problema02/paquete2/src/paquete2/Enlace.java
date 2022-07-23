@@ -52,7 +52,7 @@ public class Enlace {
                 estu.establecerApellido(rs.getString("apellido"));
                 estu.establecerCalificacion1(rs.getDouble("calificacion1"));
                 estu.establecerCalificacion2(rs.getDouble("calificacion2"));
-                estu.establecerCalificacion2(rs.getDouble("calificacion3"));
+                estu.establecerCalificacion3(rs.getDouble("calificacion3"));
                 lista.add(estu);
             }
             
